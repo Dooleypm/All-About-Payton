@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/payton.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Assistant Store Manager</p>
+            <h1>Hi, I'm <span>Payton</span><br>From Parker Colorado</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Image2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a versatile professional with a strong educational background and significant experience. Starting with an Associate's Degree in Airframe and Power Plant, I expanded my technical skills with a Certificate in Mechanical Engineering from AIB. My focus on leadership led to certificates in Business Leadership and People in Business Leadership Essentials from Bellevue University.
+
+I hold a Bachelor's Degree in Computer Science with a concentration in Artificial Intelligence from Wilmington University, graduating with honors. My commitment to excellence extends to my professional roles, currently serving as an Assistant Manager at Walmart and previously as a Project Manager at Mile Hi Bakery overseeing Capex projects.
+
+I thrive on continuous learning and bring a blend of technical expertise and leadership skills to every opportunity. Excited about the future, I am ready to contribute my knowledge and experience to new challenges.
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Leadership</span><br>As a leader, I manage hiring, firing, and employee retention. Nightly, I complete freight planning and work closely with associates to enhance their skills. I create goal-setting plans for their success. Taking pride in the store's appearance, I lead teams of 40+ associates in cleaning, stocking, and zoning every night.</li>
+                        <li><span>Project Management</span><br>In my project management role, I led the entire parts department, managed contractors, and controlled a $5 million parts budget. I developed a parts inventory program. I collaborated with the Chief Engineer and owner on Capex projects, and oversaw daily operations, including a team of 10 mechanics. I ensured efficient scheduling, ordered parts, and completed preventive and critical maintenance assignments for on-time project completion</li>
+                        <li><span>Industrial Engineering</span><br>Installed and programed VFD drives, sensors, and relays. Completed critical repairs and preventative mainteance assignments.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-Current</span><br>Assistant JV boys lacrosse coach at Ponderosa High School</li>
+                        <li><span>2022-Current</span><br>Overnight Coach/Assistant Store Manager at Walmart</li>
+                        <li><span>2022-2022</span><br>Industrial Engineer at Safeway foods.</li>
+                        <li><span>2021-2022</span><br>Project Manager/Shop Supervisor at Mile Hi Foods.</li>
+                        <li><span>2021</span><br>Industrial Engineer at Bimbo Bakeries.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Current</span><br>MBA at Louisiana Tech University.</li>
+                        <li><span>2023-2024</span><br>BAS In Computer Science with a concentration in Artifical Intelligence at Wilmington University.</li>
+                        <li><span>2023</span><br>Certificate in People and Buisness Leadership at Bellevue University.</li>
+                        <li><span>2021</span><br>Certificate in Mechanical Engineering at American International Baking Institute.</li>
+                        <li><span>2018-2021</span><br>APS In Airframe and Powerplant at Spartan College of Aeronautics and Technology.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Project Management</h2>
+                <p>Skilled in project management, adept at planning, executing, and delivering projects on time and within budget. Strong communicator, detail-oriented, and proactive in addressing challenges.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Industrial Engineering</h2>
+                <p>Experienced industrial engineer with expertise in process optimization, data analysis, and project management. Proficient in electrical engineering and programming, adept at leveraging technical skills to drive efficiency and innovation across diverse industries</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Management</h2>
+                <p>Seasoned manager proficient in leading teams of 50+ associates. Skilled in fostering a collaborative and high-performing work environment while ensuring alignment with organizational goals. Experienced in talent development, performance management, and cultivating a culture of accountability and excellence.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Image5.jpg">
+                <div class="layer">
+                    <h3>Inventory Management</h3>
+                    <p>Collaborated closely with the Chief Engineer to design and program a database system for inventorying over 70,000 parts in our department. Implemented min and max thresholds to automate ordering processes, while establishing and nurturing relationships with vendors and part specialists.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Image8.jpg">
+                <div class="layer">
+                    <h3>Project Management</h3>
+                    <p>Managed contractor hiring for Capital Expenditure projects in an industrial plant setting. Oversaw installation and design of large industrial equipment and conducted engineer training for efficient operation. Ensured seamless project execution and timely completion within budgetary constraints.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Image9 .jpg">
+                <div class="layer">
+                    <h3>Retail Management</h3>
+                    <p>Dynamic and results-oriented professional with a proven track record in effective people management. Skilled in fostering positive workplace cultures, motivating teams, and optimizing performance through strategic leadership and mentorship. Experienced in conflict resolution, talent acquisition, and employee development, adept at creating collaborative environments that drive organizational success. Strong communicator with a keen ability to build strong relationships across all levels of an organization.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Paytondooley9@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 480-809-0575</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Payton-Dooley-Resume-2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
